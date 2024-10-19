@@ -17,12 +17,12 @@ class GenreDiversityPlugin(BeetsPlugin):
         try:
             # Print explanations of each index and analysis type
             print("About the Diversity Measures:")
-            print("- **Shannon Diversity Index**: Measures diversity by considering both the number of genres and their relative abundances.")
-            print("- **Simpson Diversity Index**: Focuses on the probability that two randomly selected items belong to different genres.\n")
+            print("Shannon Diversity Index: Measures diversity by considering both the number of genres and their relative abundances.")
+            print("Simpson Diversity Index: Focuses on the probability that two randomly selected items belong to different genres.\n")
             
             print("Difference Between Overall and Primary Genre Analysis:")
-            print("- **Overall Genre Analysis**: Considers all genres assigned to tracks, providing a comprehensive view of total genre diversity.")
-            print("- **Primary Genre Analysis**: Only considers the first genre assigned to each track, reflecting the main musical style.\n")
+            print("Overall Genre Analysis: Considers all genres assigned to tracks, providing a comprehensive view of total genre diversity.")
+            print("Primary Genre Analysis: Only considers the first genre assigned to each track, reflecting the main musical style.\n")
 
             # Fetch genres using Beets library
             genres = lib.items('genre:""')
