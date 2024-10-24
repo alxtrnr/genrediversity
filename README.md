@@ -21,6 +21,9 @@ This repository contains a Beets plugin that calculates and analyzes the genre d
 ## Usage
 beet genrediversity
 
+Works with single or comma seperated genres. If using another seperator just find and edit this line to suit  your needs -   
+```primary_genres = [item.genre.split(',')[0] for item in genres if item.genre]```
+
 ## Example Output
 About the Diversity Measures:
 - Shannon Diversity Index: Measures diversity by considering both the number of genres and their relative abundances.
